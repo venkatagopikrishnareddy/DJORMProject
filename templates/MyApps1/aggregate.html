@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'MyApps1/base.html'%}
+{%block body_block%}
+    <style>
+    h2{
+        color: red;
+        background-color: lightgreen;
+    }
+    ul{
+        background-color:lightgray;
+    }
+    li{
+        color: black;
+    }
+    span{
+        color: red;
+    }
+    span2{
+        color: blue;
+        font-size: 20px;
+    }
+    </style>
+    <h2>Employee-Table Aggregate Information</h2>
+    <ul>
+        <li>Average Salary :<span2>{{avg1}}</span2></li>
+        <li>Average Salary :<span>{{avg1.sal__avg}}</span></li>
+        <li>Max Salary : <span2>{{max}}</span2></li>
+        <li>Max Salary :<span>{{max.sal__max}}</span></li>
+        <li>Min Salary : <span2>{{min}}</span2></li>
+        <li>Min Salary : <span>{{min.sal__min}}</span></li>
+        <li>Total Salary :<span2>{{sum}}</span2></li>
+        <li>Total Salary :<span>{{sum.sal__sum}}</span></li>
+        <li>Number of employees :<span2>{{count}}</span2></li>
+        <li>Number of employees :<span2>{{count.sal__count}}</span2></li>
+    </ul>
+{%endblock%}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'MyApps1/base.html'%}
+{%block body_block%}
+    <style>
+    h2{
+        color: red;
+        background-color: lightgreen;
+    }
+    li{
+        background-color:lightgray;
+    }
+    span2{
+        color: blue;
+    }
+    tr{
+        color: white;
+        font-size: 15px;
+    }
+    </style>
+    <h2>Employee-Table Aggregate Information</h2>
+    <ul type="disc">
+        <p>ORM HTML DATA </p>
+        <hr color="red"/>
+        <li>1.<span2>{{ename}}</span2></li><n/><br/>
+        <li>2.<span2>{{empno}}</span2></li><n/><br/>
+        <li>3.<span2>{{sal}}</span2></li><n/><br/>
+        <li>4.<span2>{{address}}</span2></li><br/>
+        <li>5.<span2>{{job}}</span2></li><br/>
+    </ul>
+{%endblock%}
